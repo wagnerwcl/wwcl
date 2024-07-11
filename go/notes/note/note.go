@@ -10,13 +10,13 @@ import (
 )
 
 type Note struct {
-	Title   string
-	Content string
-	CreatAt time.Time
+	Title   string    `json:"title"`
+	Content string    `json:"content"`
+	CreatAt time.Time `json:"created_at"`
 }
 
 func (note Note) Display() {
-	fmt.Printf("Your note titled %v has the following content:\n\n%v", note.Title, note.Content)
+	fmt.Printf("Your note titled %v has the following content: %v\n\n", note.Title, note.Content)
 }
 
 func (note Note) Save() error {

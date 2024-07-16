@@ -6,6 +6,10 @@ func main() {
 	prices := []float64{10.99, 9.99}
 	prices = append(prices, 5.99)
 	fmt.Println(prices)
+
+	discountPrices := []float64{100.00, 80.99, 20, 59}
+	prices = append(prices, discountPrices...) // Join lists
+	fmt.Println(prices)
 }
 
 // func main() {

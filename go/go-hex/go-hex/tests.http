@@ -1,0 +1,19 @@
+get http://localhost:3000/tasks
+
+###
+
+post http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "description": "Description 3"
+}
+
+###
+
+post http://localhost:3000/tasks/completed?id=d05d8e57-f8b2-491c-a36a-f67e46a39db7
+
+
+###
+
+delete http://localhost:3000/tasks/delete?id=5b48ffd9-05f1-4cc2-a051-7a1a3a391e51
